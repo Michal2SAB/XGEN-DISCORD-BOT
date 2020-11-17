@@ -57,5 +57,5 @@ for file in os.listdir('./Commands'):
   if file.endswith('.py'):
     client.load_extension(f'Commands.{file[:-3]}')
 
-    
+# Running the bot   
 client.run(botinfo['bot_token'])
