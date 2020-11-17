@@ -1,5 +1,5 @@
 # XGEN-DISCORD-BOT
-A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release the rewritten version for those who still play sa and shit and wanna run the bot in their server, cause I don't care about these games anymore.
+A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release the rewritten and easy to use version for those who still play sa and shit and wanna run the bot in their server, cause I don't care about these games anymore.
 
 # REQUIREMENTS
 
