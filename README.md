@@ -20,7 +20,58 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 6. And that's all. Have fun I guess. The bot is pretty much yours (kinda).
 7. Also, don't edit any of the .py files unless you know what you're doing.
 
+# COMMANDS
 
+!stats [account] - Lookup stats for a Stick Arena account.
 
+!statsbbh [account] - Lookup stats for a Boxhead account. Aliases: !bbhstats, !bbh, !statsboxhead, !boxheadstats
 
+!oldstats [account] - Check stats for an account before the dumb reset. Aliases: !old, !prevstats, !statsold
 
+!prems [account] - Lookup premium items for a boxhead account. Aliases: !premiums
+
+!users [server] - Check who's currently online in a specified Stick Arena server.
+
+!games [server] - Check what games are currently available in a specified Stick Arena server.
+
+!gameinfo [server] [game name] - Check info on a specified game in a specified Stick Arena server. Aliases: !info
+
+!creator [server] [game name] - Check who created a specified game in a specified Stick Arena server.
+
+!find [player] - Search for user through all of Stick Arena servers. Aliases: !f
+
+!totalstats - Check how many users are online and how many games are opened in all sa servers. Aliases: !total, !ts, !activity
+
+!create [username] [password] [optional color code] - Create a new XGen account. Aliases: !createacc, !make
+
+!namechange [current name] [password] [new name] - Change your XGen username. Aliases: !change, !changename
+
+!check [Primary color code] [optional secondary] - Generate profile with your given color code for name and spinner. Aliases: !spinner, !color, !checkcolor, !checkspinner, !cp
+
+!randomcolor - Generate random sa color (to request only working color code, type !randomcolor valid). Aliases: !rand, !random, !randcol, !randcolor
+
+!oldskool [RRRGGGBBB] [RRRGGGBBB] - Generate oldskool spinner with the color code you specified. Aliases: !os
+
+!pro [RRRGGGBBB] [RRRGGGBBB] - Generate the pro spinner with the code code you specified. Aliases: !thepro
+
+!validate [RRRGGGBBB] - Check if a color code will have a red glitch in Stick Arena lobby. Aliases: !valid, !validcolor, !validatecolor
+
+!buy [account] [password] [spinner] [RRRGGGBBB] [RRRGGGBBB] - Buy any Stick Arena spinner of any color code. Aliases: !purchase, !buyspinner
+
+!servers - Server names for !users, !games, !creator and !gameinfo commands.
+
+!spinners - List of SA spinners that you can purchase with bot. (For !buy command).
+
+!staff - Give link to current XGen staff forum thread. Aliases: !admins, !mods
+
+!forums - Request for XGen forums link. Aliases: !forumslink, !forum, !discourse
+
+!highscores - Request for all Stick Arena highscores links. Aliases: !hs, !leaderboard, !lb
+
+!xgenapis - Request a list of all (useful) XGen apis. Aliases: !apis, !apiurls
+
+!maptools - Request for available Stick Arena map tools. Aliases: !eedok
+
+!commands - Obviously get the list of all commands. Aliases: !cmds, !command
+
+!help - What the hell is this bot? Yea.. that command is for that.
