@@ -59,7 +59,7 @@ class Other(commands.Cog):
     # Handling the help command
     @commands.command()
     async def help(self, ctx):
-        await ctx.send(f"Hi. I'm a Discord Bot for Stick Arena and XGenStudios. I was created by Michał and I'm currently hosted by {self.AdminVar['ADMIN']}. Type !commands for the list of all commands.")
+        await ctx.send(f"Hi. I'm a Discord Bot for XGenStudios. Mostly Stick Arena. I was created by Michał and I'm currently hosted by {self.AdminVar['ADMIN']}. Type !commands for the list of all commands.")
 
     # Handling the commands command
     @commands.command(aliases=['commands', 'command'])
