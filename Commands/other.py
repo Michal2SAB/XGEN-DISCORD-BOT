@@ -80,7 +80,7 @@ class Other(commands.Cog):
             print(e)
 
     # Handling the oldskool command
-    @commands.command()
+    @commands.command(aliases=['os'])
     async def oldskool(self, ctx, RGB1, RGB2):
         try:
             theImage = s.gen(RGB1, RGB2, 'oldskool')
