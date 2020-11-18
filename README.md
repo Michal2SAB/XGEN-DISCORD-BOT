@@ -16,7 +16,7 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 2. In config.ini you have bunch of variables that you need to edit. Bot token, your admin name.. etc. You will get it once you open it. To set your bot accounts for sa, just run 'botGenerator.py'. It will help you create the bots and edit the variables in config.ini file for you so you don't have to do that manually.
 3. You don't need to edit the bot_prefix, bot_activity, bot_status_text, bot_status variables.
 4. After you set all the variables, you can just run the 'run.py' file and your bot will start in the server you invited it to.
-5. If you don't know how to get a discord bot token or how to invite it to your server, just google it, there are tons of tutorials for that.
+5. If you don't know how to get a discord bot token or how to invite the bot to your server, just google it, there are tons of tutorials for that.
 6. And that's all. Have fun I guess. The bot is pretty much yours (kinda).
 7. Also, don't edit any of the .py files unless you know what you're doing.
 
