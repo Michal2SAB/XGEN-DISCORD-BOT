@@ -5,7 +5,7 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 # REQUIREMENTS
 
 1. You need python 3.6 or newer installed on your computer.
-2. After you have installed python, download this respository as .zip file.
+2. After you have installed python, download this respository as .zip file. Or go to the releases page and download this project.
 3. After you downloaded and unpacked the folder, go to the folder "Install Modules". 
 4. Then run the file 'install.bat'. It will install all the required modules for this project for you.
 5. If you see any errors, you might need to also download and install this: https://sourceforge.net/projects/gtk-win/files/latest/download
