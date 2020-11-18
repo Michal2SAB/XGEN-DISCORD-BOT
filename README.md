@@ -21,7 +21,7 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 7. Also, don't edit any of the .py files unless you know what you're doing.
 
 # COMMANDS
-
+```diff
 !stats [account] - Lookup stats for a Stick Arena account.
 
 !statsbbh [account] - Lookup stats for a Boxhead account. Aliases: !bbhstats, !bbh, !statsboxhead, !boxheadstats
@@ -75,3 +75,4 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 !commands - Obviously get the list of all commands. Aliases: !cmds, !command
 
 !help - What the hell is this bot? Yea.. that command is for that.
+```
