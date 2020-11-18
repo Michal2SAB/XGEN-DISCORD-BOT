@@ -20,7 +20,7 @@ ServerNames = {'2dc': '45.76.234.65:1138', 'ptc': '45.76.235.18:1138', 'fli': '4
 
 # Handling totalstats command 
 # This whole code is a fucking mess but you shouldn't care as long it works probably..
-@commands.command(aliases=['total', 'ts', 'activity')
+@commands.command(aliases=['total', 'ts', 'activity'])
 async def totalstats(ctx):
 
     # Separating server & port for the servers
