@@ -14,19 +14,19 @@ async def randomcolor(ctx, valid=None):
     generated = 0
     allowed = True
     extra = ''
+    stringR = 0
+    stringG = 0
+    stringB = 0
+    theInt = -99
     while generated == 0:
         await asyncio.sleep(0.5)
-        stringR = 0
-        stringG = 0
-        stringB = 0
+        
         if valid != None:
-            stringR = random.randint(000, 255)
-            stringG = random.randint(000, 255)
-            stringB = random.randint(000, 255)
-        else:
-            stringR = random.randint(-99, 255)
-            stringG = random.randint(-99, 255)
-            stringB = random.randint(-99, 255)
+            theInt = 000
+            
+        stringR = random.randint(theInt, 255)
+        stringG = random.randint(theInt, 255)
+        stringB = random.randint(theInt, 255)
   
         mathNumbers = stringR + stringG + stringB
 
