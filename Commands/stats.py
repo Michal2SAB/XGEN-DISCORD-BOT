@@ -209,7 +209,7 @@ async def stats(ctx, member):
 
     # If the stats request took too long & didn't receive any response     
     except Timeout:
-        await ctx.send(ctx.message.author.mention + " Stats request timed out, try again or report the issue to Michal2SAB. Maybe, just MAYBE he will help you out.")
+        await ctx.send(ctx.message.author.mention + " Stats request timed out, try again.")
 
     # Logging any other errors that may occur
     except Exception as e:
