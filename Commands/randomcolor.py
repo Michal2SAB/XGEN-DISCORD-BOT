@@ -110,6 +110,6 @@ async def randomcolor(ctx, valid=None):
             for img in imgList:
                 os.remove(img)
 
-# Make the command load & work
+# Make the command load & work.
 def setup(bot):
     bot.add_command(randomcolor)
