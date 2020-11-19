@@ -49,7 +49,7 @@ async def totalstats(ctx):
         botacc.sendPacket(botacc.SocketConn, '02Z900_') # Appear in lobby v2 (sometimes 03_ doesn't do the job)
         botacc.sendPacket(botacc.SocketConn, '01') # Show us all games in the room
 
-    time.sleep(0.5) # There is some filtering/blocking going on the server so we gotta wait
+    time.sleep(0.5) # There is some filtering/blocking going on the server so we gotta wait..
 
     # Check if any of our bot accounts are banned and let us know if so
     accBanned = acs.isBanned(a, a1, a2, a3, a4, a5, a6)
