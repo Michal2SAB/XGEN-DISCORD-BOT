@@ -46,7 +46,7 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 
 !namechange [current name] [password] [new name] - Change your XGen username. Aliases: !change, !changename
 
-!check [Primary color code] [optional secondary] - Generate profile with your given color code for name and spinner. Aliases: !spinner, !color, !checkcolor, !checkspinner, !cp
+!check [primary color code] [optional secondary] - Generate profile with your given color code for name and spinner. Aliases: !spinner, !color, !checkcolor, !checkspinner, !cp
 
 !randomcolor - Generate random sa color (to request only working color code, type !randomcolor valid). Aliases: !rand, !random, !randcol, !randcolor
 
@@ -58,6 +58,10 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 
 !buy [account] [password] [spinner] [RRRGGGBBB] [RRRGGGBBB] - Buy any Stick Arena spinner of any color code. Aliases: !purchase, !buyspinner
 
+!verify [account] [password] [email] - Verify an xgen account.
+
+!recover [email] - Recover an xgen account.
+
 !servers - Server names for !users, !games, !creator and !gameinfo commands.
 
 !spinners - List of SA spinners that you can purchase with bot. (For !buy command).
@@ -67,10 +71,6 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 !forums - Request for XGen forums link. Aliases: !forumslink, !forum, !discourse
 
 !highscores - Request for all Stick Arena highscores links. Aliases: !hs, !leaderboard, !lb
-
-!verify - Verify an xgen account.
-
-!recover - Recover an xgen account.
 
 !xgenapis - Request a list of all (useful) XGen apis. Aliases: !apis, !apiurls
 
