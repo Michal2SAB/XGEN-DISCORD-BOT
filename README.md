@@ -68,6 +68,10 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 
 !highscores - Request for all Stick Arena highscores links. Aliases: !hs, !leaderboard, !lb
 
+!verify - Verify an xgen account.
+
+!recover - Recover an xgen account.
+
 !xgenapis - Request a list of all (useful) XGen apis. Aliases: !apis, !apiurls
 
 !maptools - Request for available Stick Arena map tools. Aliases: !eedok
