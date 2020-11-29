@@ -90,10 +90,10 @@ async def statsbbh(ctx, *, member):
             
             d.text((330,120), f"W/L: {wlr}", fill=(255,255,255), font=font2)
         
-            img1 = img.save(member + '.png')
-            await ctx.message.channel.send(file=discord.File(member + '.png'))
+            img1 = img.save('bbhstats.png')
+            await ctx.message.channel.send(file=discord.File('bbhstats.png'))
             img.close()
-            os.remove(member + '.png')
+            os.remove('bbhstats.png')
         else:
             return await ctx.send(f"User '{member}' doesn't exist!")
 
