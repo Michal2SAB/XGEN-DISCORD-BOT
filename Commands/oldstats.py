@@ -144,10 +144,10 @@ async def oldstats(ctx, *, member):
                     d.text((409,126), "BANNED", fill=(0,0,0), font=font2)
                     d.text((410,127), "BANNED", fill=(128,0,0), font=font2)
                 
-                img1 = img.save(member + '_old.png')
-                await ctx.message.channel.send(file=discord.File(member + '_old.png'))
+                img1 = img.save('oldstats.png')
+                await ctx.message.channel.send(file=discord.File('oldstats.png'))
                 img.close()
-                os.remove(member + '_old.png')
+                os.remove('oldstats.png')
         
             else:
                 await ctx.send(f"'{member}' doesn't have any previous stats.")
@@ -162,3 +162,7 @@ async def oldstats(ctx, *, member):
 # Make the command load & work
 def setup(bot):
     bot.add_command(oldstats)
+    
+@oldstats.error
+async def oldstats_error(error, ctx):
+    return await error.send(error.message.author.mention + " Format: !oldstats [username]")
