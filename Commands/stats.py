@@ -157,14 +157,14 @@ async def stats(ctx, member):
                     d.text((410,127), "BANNED", fill=(128,0,0), font=font2)
 
                 # After the picture is generated, save it to the bot's directory
-                img1 = img.save(member + '.png')
+                img1 = img.save('stats.png')
 
                 # Send our generated stats image to the discord server
-                await ctx.message.channel.send(file=discord.File(member + '.png'))
+                await ctx.message.channel.send(file=discord.File('stats.png'))
 
                 # Close image and delete it
                 img.close()
-                os.remove(member + '.png')
+                os.remove('stats.png')
                 
             # If the account doesn't have any stickarena stats
             else:
