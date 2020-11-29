@@ -60,7 +60,7 @@ A discord bot for XGenStudios. Mostly for stick arena. Just thought I'd release 
 
 !verify [account] [password] [email] - Verify an xgen account.
 
-!recover [email] - Recover an xgen account.
+!recover [email] - Recover an xgen account. Aliases: !recov, !lostacc, !lost
 
 !servers - Server names for !users, !games, !creator and !gameinfo commands.
 
