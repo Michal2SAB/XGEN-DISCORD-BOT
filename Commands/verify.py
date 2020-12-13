@@ -17,7 +17,7 @@ async def verify(ctx, member, Passw, email):
             await ctx.send("A verification E-mail has been sent to you (this may take a few minutes to arrive). When you receive our E-mail, open it and click the link inside to verify your account and claim your 500 cred.")
         else:
             errorMsg = APIData.getElementsByTagName('err')[0].attributes['msg'].value
-            await ctx.send("Your XGen Account is already verified.")
+            await ctx.send(errorMsg)
     except Timeout:
         await ctx.send(ctx.message.author.mention + " Your requested timed out, try again.")
     except Exception as e:
