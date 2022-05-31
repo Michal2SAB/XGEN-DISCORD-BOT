@@ -21,3 +21,30 @@
 | 06;rc | Get game creator | 06Xgen Hq;rc |
 | 0h | Find user in server | 0hMichal |
 | 0b + spinner id + color1 + color2 | Buy spinner | 0b100255000000255000000
+
+## Server to Client
+
+# . : : Color Code Rules : : .
+## Shop Purchase / Create Account
+* Total value of RGB ($\color{#FA3535}{Red}$ + $\color{#4CFF4C}{Green}$ + $\color{#3333FF}{Blue}$) can't exceed $\color{#FF7DF6}{522}$
+* Total value of RGB ($\color{#FA3535}{Red}$ + $\color{#4CFF4C}{Green}$ + $\color{#3333FF}{Blue}$) can't be less than $\color{#FF7DF6}{248}$
+* Atleast one value ($\color{#FA3535}{Red}$ + $\color{#4CFF4C}{Green}$ + $\color{#3333FF}{Blue}$) has to be $\color{#FF7DF6}{128}$ or greater
+* $\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ and $\color{#3333FF}{Blue}$ values can't be all the same
+* Only $\color{#FA3535}{Red}$ can be a negative value, not $\color{#4CFF4C}{Green}$ or $\color{#3333FF}{Blue}$
+* None of the $\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ and $\color{#3333FF}{Blue}$ values can exceed $\color{#FF7DF6}{255}$
+* Negative $\color{#FA3535}{Red}$ value doesn't work when creating new account, only through shop purchase
+
+## Red Color Glitch
+If RGB [decimal](https://en.wikipedia.org/wiki/Decimal) value is less than $\color{#FF7DF6}{6582527}$ or exceeds $\color{#FF7DF6}{16777158}$, color will appear as red in lobby to other players
+
+This rule doesn't apply to mod users or when in-game
+
+* Math: 
+  
+  ```Red << 16 ^ Green << 8 ^ Blue```
+
+## Color Transform Rules
+Stick Arena transforms RGB colors so $\color{#FF0000}{255000000}$ will not look the same as on some website. 
+* Game adds $\color{#FF7DF6}{100}$ to all three $\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ and $\color{#3333FF}{Blue}$ values
+* If any value ($\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ or $\color{#3333FF}{Blue}$) is greater than $\color{#FF7DF6}{255}$, they becomes $\color{#FF7DF6}{255}$
+* $\color{#FF0000}{255000000}$ RGB will return $\color{#ff6464}{255100100}$ and 255-99-99 will return $\color{#FF0000}{255001001}$
