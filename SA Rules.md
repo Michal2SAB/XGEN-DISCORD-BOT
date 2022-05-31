@@ -23,6 +23,24 @@
 | 0b + spinner id + color1 + color2 | Buy spinner | 0b100255000000255000000
 
 ## Server to Client
+| Packet      | Description |
+| :---        | :---        |
+| A           | Receive your lobby stats |
+| U           | Add new online user to game/lobby and receive their stats |
+| D           | Remove user who left lobby/game |
+| 08          | Server capacity check success |
+| 09          | Incorrect login password |
+| 091         | Account is banned |
+| 093         | Secondary login |
+| 0c          | Receive cred ticket |
+| 01          | Receive open games list |
+| 04          | Receive info about selected game |
+| 06;mp       | Receive map name from selected game |
+| 06;rc       | Discover who created selected game |
+| 0h          | Receive response for /find command |
+| 0f and 0e   | You got banned, ban time and ban message |
+| 0g          | Receive mod warning / mod global message |
+
 
 # . : : Color Code Rules : : .
 ## Shop Purchase / Create Account
