@@ -1,3 +1,5 @@
+Stick Arena structure, secrets and other cool knowledge that I learned over years. 
+
 # . : : Stick Arena Packet Structure : : .
 
 ## Client to Server
@@ -66,3 +68,62 @@ Stick Arena transforms RGB colors so $\color{#FF0000}{255000000}$ will not look 
 * Game adds $\color{#FF7DF6}{100}$ to all three $\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ and $\color{#3333FF}{Blue}$ values
 * If any value ($\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ or $\color{#3333FF}{Blue}$) is greater than $\color{#FF7DF6}{255}$, they becomes $\color{#FF7DF6}{255}$
 * $\color{#FF0000}{255000000}$ RGB will return $\color{#ff6464}{255100100}$ and 255-99-99 will return $\color{#FF0000}{255001001}$
+
+# . : : Moderator Commands, Privileges and Secrets : : .
+## Original Commands
+* /killroom {game} - Close any game in server
+* /ban {user} {level} {reason} - Self explanatory
+* /warn {user} {message} - Send a popup box with a warning message to user
+* /global {message} - Send a global popup box message to everybody in server
+* /ip {user} - Get any user's IP Address
+* /kick {user} - Kick any user from game with just 1 vote
+
+## New Special Commands (2015-now)
+* !showgames - Get list of all opened games in server, including full ones and private games
+* !listplayers {game} - Get a list of all players in specified game
+* !disconnect {user} - Kick any user out of server, simulate disconnection
+* !creator {game} (uncomfirmed) & /creator {game} (on mod client) - Get the specified game's creator
+* /iplookup {user} (on mod client) - Get any user's IP address AND automatically lookup basic info about it (isp, general isp location etc)
+
+## Mod Privileges
+* Red color glitch in lobby doesn't apply, no matter what the [decimal](https://en.wikipedia.org/wiki/Decimal) value of RGB is
+* Can't be kicked from any game
+* 40/60 kills limit in-game doesn't apply
+* /find will tell game name even if it's private
+* Color code rules for shop purchase don't apply for level 2 mods (unconfirmed)
+* Always above everybody's rank in lobby, even labpass players
+* XGen admins favouritism, favors and numerous advantages
+* Incredible power, little to no responsibility
+
+## Mod Tools
+
+#### 1. Mod Control Panel & Features
+Used to be located at http://xgenstudios.com:8000 and later at Neo's webserver. 2017-now either moved, uses ip whitelisting or got built-in in an app because of me.
+
+Features:
+* Lookup all accounts tied to specified IP Address (won't find if the alts are currently under different IP)
+* Check account ban record; ban date, times, reasons etc.
+* Check account's registered e-mail address
+* Get IP Address of any user
+* Ban any user up to 5 years (regardless of mod level)
+* Ban account along with the IP tied to it (default) or ban the account alone
+* Check any user's game stats, status, last login date, current IP and current RGB color code, current verified email or unverified one (attempted at account creation)
+
+
+![mcp](https://github.com/Michal2SAB/XGEN-DISCORD-BOT/raw/main/Screenshot_2.png)
+
+### 2. Mod Client
+Custom stick arena flash client created by Neo for moderators
+
+Features:
+* Quick action; quick command input upon button click and selected user or game
+* /iplookup command
+* /creator command (non-mod users can use it too)
+* Automatically disconnect/ban anybody who is joining and rejoining lobby too fast (for rcp manipulation purposes for example) - in v2
+* Ability to use mod commands sneakily via regular account (incognito mode)
+
+   * v1: by having a mod account join random private game and use its socket connection to send packets
+   
+   * v2: by having a mod account connect to server but not send lobby appearance packet and use its socket conn to send packets
+
+[![mcc](https://github.com/Michal2SAB/XGEN-DISCORD-BOT/blob/main/Screenshot_3.png)](https://www.youtube.com/watch?v=7AYOveT-t7k)
