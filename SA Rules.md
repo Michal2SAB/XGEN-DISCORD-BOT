@@ -48,7 +48,7 @@ Stick Arena structure, secrets and other cool knowledge that I learned over year
 ## Shop Purchase / Create Account
 * Total value of RGB ($\color{#FA3535}{Red}$ + $\color{#4CFF4C}{Green}$ + $\color{#3333FF}{Blue}$) can't exceed $\color{#FF7DF6}{522}$
 * Total value of RGB ($\color{#FA3535}{Red}$ + $\color{#4CFF4C}{Green}$ + $\color{#3333FF}{Blue}$) can't be less than $\color{#FF7DF6}{248}$
-* Atleast one value ($\color{#FA3535}{Red}$ + $\color{#4CFF4C}{Green}$ + $\color{#3333FF}{Blue}$) has to be $\color{#FF7DF6}{128}$ or greater
+* Atleast one value ($\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ or $\color{#3333FF}{Blue}$) has to be $\color{#FF7DF6}{128}$ or greater
 * $\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ and $\color{#3333FF}{Blue}$ values can't be all the same
 * Only $\color{#FA3535}{Red}$ can be a negative value, not $\color{#4CFF4C}{Green}$ or $\color{#3333FF}{Blue}$
 * None of the $\color{#FA3535}{Red}$, $\color{#4CFF4C}{Green}$ and $\color{#3333FF}{Blue}$ values can exceed $\color{#FF7DF6}{255}$
@@ -70,7 +70,7 @@ Stick Arena transforms RGB colors so $\color{#FF0000}{255000000}$ will not look 
 * $\color{#FF0000}{255000000}$ RGB will return $\color{#ff6464}{255100100}$ and 255-99-99 will return $\color{#FF0000}{255001001}$
 
 # . : : Moderator Commands, Privileges and Secrets : : .
-## Original Commands
+### Original Commands
 * /killroom {game} - Close any game in server
 * /ban {user} {level} {reason} - Self explanatory
 * /warn {user} {message} - Send a popup box with a warning message to user
@@ -78,14 +78,14 @@ Stick Arena transforms RGB colors so $\color{#FF0000}{255000000}$ will not look 
 * /ip {user} - Get any user's IP Address
 * /kick {user} - Kick any user from game with just 1 vote
 
-## New Special Commands (2015-now)
+### New Special Commands (2015-now)
 * !showgames - Get list of all opened games in server, including full ones and private games
 * !listplayers {game} - Get a list of all players in specified game
 * !disconnect {user} - Kick any user out of server, simulate disconnection
 * !creator {game} (uncomfirmed) & /creator {game} (on mod client) - Get the specified game's creator
 * /iplookup {user} (on mod client) - Get any user's IP address AND automatically lookup basic info about it (isp, general isp location etc)
 
-## Mod Privileges
+### Mod Privileges
 * Red color glitch in lobby doesn't apply, no matter what the [decimal](https://en.wikipedia.org/wiki/Decimal) value of RGB is
 * Can't be kicked from any game
 * 40/60 kills limit in-game doesn't apply
@@ -95,7 +95,7 @@ Stick Arena transforms RGB colors so $\color{#FF0000}{255000000}$ will not look 
 * XGen admins favouritism, favors and numerous advantages
 * Incredible power, little to no responsibility
 
-## Mod Tools
+### Mod Tools
 
 #### 1. Mod Control Panel & Features
 Used to be located at http://xgenstudios.com:8000 and later at Neo's webserver. 2017-now either moved, uses ip whitelisting or got built-in in an app because of me.
@@ -112,7 +112,7 @@ Features:
 
 ![mcp](https://github.com/Michal2SAB/XGEN-DISCORD-BOT/raw/main/Screenshot_2.png)
 
-### 2. Mod Client
+#### 2. Mod Client
 Custom stick arena flash client created by Neo for moderators
 
 Features:
@@ -127,3 +127,14 @@ Features:
    * v2: by having a mod account connect to server but not send lobby appearance packet and use its socket conn to send packets
 
 [![mcc](https://github.com/Michal2SAB/XGEN-DISCORD-BOT/blob/main/Screenshot_3.png)](https://www.youtube.com/watch?v=7AYOveT-t7k)
+
+#### 3. Color Hack Program
+
+* One by Ryan (ex mod, creator of Targex) and the other one by Krux aka Dutch3s (ex mod, aimbot hacker)
+
+Features:
+  * Spinner and name color preview
+  * Color rules applied, prevents from trying non-working color codes
+
+# . : : Rank 16 : : .
+[![rank](https://github.com/Michal2SAB/XGEN-DISCORD-BOT/raw/main/Screenshot_5.png)](https://youtu.be/tWrqZXKtH8E)
