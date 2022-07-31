@@ -3,3 +3,4 @@ discord.py
 bs4
 pillow
 cairosvg
+CairoSVG
